@@ -1,4 +1,5 @@
 name: 'piuparts'
+author: 'Evgeni Golov'
 description: 'Run piuparts on a Debian package'
 inputs:
   package:
@@ -20,3 +21,6 @@ runs:
     - ${{ inputs.package }}
     - ${{ inputs.base-image }}
     - ${{ inputs.fake-essential-packages }}
+branding:
+  icon: 'repeat'
+  color: 'purple'
