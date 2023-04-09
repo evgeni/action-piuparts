@@ -4,15 +4,12 @@ description: 'Run piuparts on a Debian package'
 inputs:
   package:
     description: 'The package to run piuparts on'
-    required: true
     default: '*.changes'
   base-image:
     description: 'The base-image to run piuparts in'
-    required: false
     default: 'debian:sid'
   fake-essential-packages:
     description: 'Packages that should be added to the fake-essential-packages list'
-    type: 'string'
     default: ''
 runs:
   using: 'docker'
