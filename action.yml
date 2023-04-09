@@ -1,4 +1,4 @@
-name: 'piuparts'
+name: 'Run piuparts'
 author: 'Evgeni Golov'
 description: 'Run piuparts on a Debian package'
 inputs:
