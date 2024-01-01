@@ -11,5 +11,6 @@ else
   else
     ARGS=""
   fi
+  docker pull $2
   piuparts $1 --docker-image $2 ${ARGS}
 fi
