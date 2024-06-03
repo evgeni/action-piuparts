@@ -12,6 +12,12 @@ The package to run `piuparts` on. Default `"*.changes"`.
 
 The base image to run `piuparts` in. Default `"debian:sid"`.
 
+### `distribution`
+
+The Debian distribution to run `piuparts` in. Default `"sid"`.
+
+`base-image` and `distribution` should match to have a correct piuparts test.
+
 ### `fake-essential-packages`
 
 Packages that should be added to the fake-essential-packages list. Default `""`.

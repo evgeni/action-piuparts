@@ -8,6 +8,9 @@ inputs:
   base-image:
     description: 'The base-image to run piuparts in'
     default: 'debian:sid'
+  distribution:
+    description: 'The Debian distribution to run piuparts in'
+    default: 'sid'
   fake-essential-packages:
     description: 'Packages that should be added to the fake-essential-packages list'
     default: ''
@@ -17,6 +20,7 @@ runs:
   args:
     - ${{ inputs.package }}
     - ${{ inputs.base-image }}
+    - ${{ inputs.distribution }}
     - ${{ inputs.fake-essential-packages }}
 branding:
   icon: 'repeat'
